@@ -1,17 +1,17 @@
 <?php
 
-namespace App\Services\Iugu;
+namespace Iugu;
 
-use App\Services\Iugu\Iugu;
-use App\Services\Iugu\RequestHandler;
-use App\Services\Iugu\ResponseHandler;
-use App\Services\Iugu\Endpoints\Customers;
-use App\Services\Iugu\Endpoints\Charges;
-use App\Services\Iugu\Endpoints\Invoices;
-use App\Services\Iugu\Endpoints\PaymentToken;
+use Iugu\Iugu;
+use Iugu\RequestHandler;
+use Iugu\ResponseHandler;
+use Iugu\Endpoints\Customers;
+use Iugu\Endpoints\Charges;
+use Iugu\Endpoints\Invoices;
+use Iugu\Endpoints\PaymentToken;
 use GuzzleHttp\Client as HttpClient;
 use GuzzleHttp\Exception\ClientException as ClientException;
-use App\Services\Iugu\Exceptions\InvalidJsonException;
+use Iugu\Exceptions\InvalidJsonException;
 
 class Client
 {

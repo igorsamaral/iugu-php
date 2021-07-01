@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Services\Iugu\Endpoints;
+namespace Iugu\Endpoints;
 
-use App\Services\Iugu\Routes;
-use App\Services\Iugu\Endpoints\Endpoint;
+use Iugu\Routes;
+use Iugu\Endpoints\Endpoint;
 
 class Invoices extends Endpoint
 {

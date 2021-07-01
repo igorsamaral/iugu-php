@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Services\Iugu\Endpoints;
+namespace Iugu\Endpoints;
 
-use App\Services\Iugu\Client;
+use Iugu\Client;
 
 abstract class Endpoint
 {

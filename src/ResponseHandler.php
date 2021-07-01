@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Services\Iugu;
+namespace Iugu;
 
 use GuzzleHttp\Exception\ClientException;
-use App\Services\Iugu\Exceptions\IuguException;
-use App\Services\Iugu\Exceptions\InvalidJsonException;
+use Iugu\Exceptions\IuguException;
+use Iugu\Exceptions\InvalidJsonException;
 
 class ResponseHandler
 {

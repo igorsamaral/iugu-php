@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Services\Iugu;
+namespace Iugu;
 
 class Iugu
 {

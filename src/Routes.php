@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Services\Iugu;
+namespace Iugu;
 
-use App\Services\Iugu\Anonymous;
+use Iugu\Anonymous;
 
 class Routes
 {
