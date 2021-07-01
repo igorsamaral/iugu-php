@@ -1,0 +1,29 @@
+{
+    "name": "igorsamaral/iugu-php",
+    "description": "Iugu PHP Library",
+    "type": "library",
+    "version": "1.0",
+    "keywords": [
+        "iugu.com.br",
+        "iugu",
+        "pagamentos",
+        "payments brazil",
+        "pagamento brasil",
+        "api"
+      ],
+    "authors": [
+        {
+            "name": "Igor Santana",
+            "email": "igr.amaral@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.6.0",
+        "guzzlehttp/guzzle": ">=6.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Iugu\\": "src/"
+        }
+    }
+}
