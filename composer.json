@@ -3,6 +3,7 @@
     "description": "Iugu PHP Library",
     "type": "library",
     "version": "1.0",
+    "minimum-stability": "stable",
     "keywords": [
         "iugu.com.br",
         "iugu",
