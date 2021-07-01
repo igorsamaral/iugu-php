@@ -2,8 +2,8 @@
     "name": "igorsamaral/iugu-php",
     "description": "Iugu PHP Library",
     "type": "library",
-    "version": "1.0",
-    "minimum-stability": "stable",
+    "version": "1.0.2",
+    "minimum-stability": "dev",
     "license": "MIT",
     "keywords": [
         "iugu.com.br",
