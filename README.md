@@ -62,6 +62,7 @@ Clientes representam os usuários de sua loja, ou negócio. Este objeto contém 
 
 ```php
 <?php
+
 $customer = $iugu->customers()->create([
     "email" => "joao.neves@email.com",
     "name" => "João das Neves",
@@ -85,6 +86,7 @@ $customer = $iugu->customers()->create([
 
 ```php
 <?php
+
 $customers = $iugu->customers()->getList();
 ```
 
@@ -92,6 +94,7 @@ $customers = $iugu->customers()->getList();
 
 ```php
 <?php
+
 $customer = $iugu->customers()->get([
     "id" => "ID_DO_CLIENTE"
 ]);
@@ -105,6 +108,7 @@ O Token é uma representação do meio de pagamento do cliente (por ex: seu cart
 
 ```php
 <?php
+
 $token = $iugu->paymentToken()->create([
     "account_id" => "ID_DA_SUA_CONTA_IUGU",
     "customer_id" => "ID_DO_CUSTOMER",
@@ -125,6 +129,7 @@ Cobrança simples via boleto ou cartão de crédito.
 
 ```php
 <?php
+
 $charge = $iugu->charges()->create([
     "token" => "ID_DO_TOKEN_DE_PAGAMENTO_CRIADO",
     "customer_id" => "ID_DO_CUSTOMER",
@@ -155,6 +160,7 @@ Cria uma fatura para um cliente.
 
 ```php
 <?php
+
 $invoice = $iugu->invoices()->create([
     "email" => "joao@email.com.br",
     "due_date" => "2021-07-21",
@@ -181,6 +187,7 @@ $invoice = $iugu->invoices()->create([
 
 ```php
 <?php
+
 $invoices = $iugu->invoices()->getList();
 ```
 
@@ -188,6 +195,7 @@ $invoices = $iugu->invoices()->getList();
 
 ```php
 <?php
+
 $invoice = $iugu->invoices()->get([
     "id" => "ID_DA_FATURA"
 ]);
