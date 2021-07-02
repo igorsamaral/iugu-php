@@ -32,7 +32,8 @@ Para incluir a biblioteca em seu projeto, basta fazer o seguinte:
 
 ```php
 <?php
-require("vendor/autoload.php");
+
+require __DIR__ . "/vendor/autoload.php"
 
 $iugu = new Iugu\Client("SUA_CHAVE_DE_API");
 ```
@@ -123,7 +124,7 @@ Cobrança simples via boleto ou cartão de crédito.
 
 ```php
 <?php
-$customers = $iugu->charges()->create([
+$charge = $iugu->charges()->create([
     "token" => "ID_DO_TOKEN_DE_PAGAMENTO_CRIADO",
     "customer_id" => "ID_DO_CUSTOMER",
     "total" => 10000,
@@ -153,7 +154,7 @@ Cria uma fatura para um cliente.
 
 ```php
 <?php
-$customer = $iugu->invoices()->create([
+$invoice = $iugu->invoices()->create([
     "email" => "joao@email.com.br",
     "due_date" => "2021-07-21",
     "items" => [
@@ -179,14 +180,14 @@ $customer = $iugu->invoices()->create([
 
 ```php
 <?php
-$customers = $iugu->invoices()->getList();
+$invoices = $iugu->invoices()->getList();
 ```
 
 ### Retornando uma fatura
 
 ```php
 <?php
-$customer = $iugu->invoices()->get([
+$invoice = $iugu->invoices()->get([
     "id" => "ID_DA_FATURA"
 ]);
 ```
