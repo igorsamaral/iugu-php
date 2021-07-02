@@ -44,7 +44,8 @@ $iugu = new Iugu\Client("SUA_CHAVE_DE_API");
 
 ```php
 <?php
-require("vendor/autoload.php");
+
+require __DIR__ . "/vendor/autoload.php"
 
 $iugu = new iugu\Client(
     "SUA_CHAVE_DE_API",
