@@ -28,6 +28,7 @@ final class IuguException extends \Exception
     {
         $this->type = $type;
         $this->paramInvalidJsonExceptioneterName = $parameterName;
+        $this->parameterName = $parameterName;
         $this->errorMessage = $errorMessage;
 
         $exceptionMessage = $this->buildExceptionMessage();

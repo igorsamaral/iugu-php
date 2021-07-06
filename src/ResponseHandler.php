@@ -51,10 +51,19 @@ class ResponseHandler
             return $guzzleException;
         }
 
+        $errors = [];
+
+        foreach ($jsonError->errors as $param => $error) {
+            array_push($errors, [
+                    "param" => $param,
+                    "message" => $error[0],
+            ]);
+        }
+
         return new IuguException(
-            $jsonError->errors[0]->type,
-            $jsonError->errors[0]->parameter_name,
-            $jsonError->errors[0]->message
+            $response->getStatusCode(),
+            $errors[0]["param"],
+            $errors[0]["message"]
         );
     }
 
